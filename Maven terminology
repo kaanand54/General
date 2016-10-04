@@ -1,8 +1,26 @@
 -->>>  Artifact;
         The artifact is the resulting output of the maven build, generally a jar or war or other executable file. Artifacts in maven are identified by a coordinate system of groupId, artifactId, and version. Maven uses the groupId, artifactId, and version to identify dependencies (usually other jar files) needed to build and run your code
         
+-->>>   Archetype;
+        Archetype is a Maven plugin whose task is to create a project structure as per its template. 
+        Normaly we use following two types of template
+        1. maven-archetype-webapp – Java Web Project (WAR)
+        2. maven-archetype-quickstart – Java Project (JAR)
         
 -->>>  WAR file;
        Web application archieve file; used to distribute a collection of JavaServer Pages, Java Servlets, Java classes, XML files, tag libraries, static web pages (HTML and related files) and other resources that together constitute a web application.
       
--->>> 
+-->>>  There are major three build life cycle.  link: http://tutorials.jenkov.com/maven/maven-commands.html
+        1. clean
+        2. default
+        3. site
+        
+-->>>   Inside each build life cycle there are build phases, and inside each build phase there are build goals.
+        
+-->>>   we can'nt directly executr default life cycle. Instead we execute any of build phase inside default life cycle.
+        validate:       Validates that the project is correct and all necessary information is available. This also makes sure the dependencies are downloaded.
+        compile:        Compiles the source code of the project.
+        test:           Runs the tests against the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed.
+        package:        Packs the compiled code in its distributable format, such as a JAR.
+        install:        Install the package into the local repository, for use as a dependency in other projects locally.
+        deploy:         Copies the final package to the remote repository for sharing with other developers and projects.
