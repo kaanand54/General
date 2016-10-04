@@ -1,0 +1,8 @@
+-->>>  Artifact;
+        The artifact is the resulting output of the maven build, generally a jar or war or other executable file. Artifacts in maven are identified by a coordinate system of groupId, artifactId, and version. Maven uses the groupId, artifactId, and version to identify dependencies (usually other jar files) needed to build and run your code
+        
+        
+-->>>  WAR file;
+       Web application archieve file; used to distribute a collection of JavaServer Pages, Java Servlets, Java classes, XML files, tag libraries, static web pages (HTML and related files) and other resources that together constitute a web application.
+      
+-->>> 
